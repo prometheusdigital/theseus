@@ -31,15 +31,6 @@ beans_add_smart_action( 'customize_register', 'beans_do_register_wp_customize_op
  * @return void
  */
 function beans_do_register_wp_customize_options() {
-	$fields = [
-		[
-			'id'    => 'beans_logo_image',
-			'label' => __( 'Logo Image', 'tm-beans' ),
-			'type'  => 'WP_Customize_Image_Control',
-		],
-	];
-
-	beans_register_wp_customize_options( $fields, 'title_tagline', [ 'title' => __( 'Branding', 'tm-beans' ) ] );
 
 	// Get layout option without default for the count.
 	$options = beans_get_layouts_for_options();
