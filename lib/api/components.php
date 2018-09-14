@@ -40,16 +40,6 @@ function beans_load_api_components( $components ) {
 		'post-meta'    => $root . 'post-meta/functions.php',
 		'term-meta'    => $root . 'term-meta/functions.php',
 		'fields'       => $root . 'fields/functions.php',
-		'image'        => $root . 'image/functions.php',
-		'compiler'     => [
-			$root . 'compiler/functions.php',
-			$root . 'compiler/class-beans-compiler.php',
-			$root . 'compiler/class-beans-page-compiler.php',
-		],
-		'uikit'        => [
-			$root . 'uikit/functions.php',
-			$root . 'uikit/class-beans-uikit.php',
-		],
 		'layout'       => $root . 'layout/functions.php',
 		'template'     => $root . 'template/functions.php',
 		'widget'       => $root . 'widget/functions.php',
@@ -61,8 +51,6 @@ function beans_load_api_components( $components ) {
 			'options'     => $root . 'options/functions.php',
 			'post-meta'   => $root . 'post-meta/functions-admin.php',
 			'term-meta'   => $root . 'term-meta/functions-admin.php',
-			'compiler'    => $root . 'compiler/class-beans-compiler-options.php',
-			'image'       => $root . 'image/class-beans-image-options.php',
 			'_admin_menu' => $root . 'admin-menu.php', // Internal use.
 		];
 	} else {
@@ -84,9 +72,6 @@ function beans_load_api_components( $components ) {
 		'term-meta'    => 'fields',
 		'wp-customize' => 'fields',
 		'layout'       => 'fields',
-		'image'        => '_admin_menu',
-		'compiler'     => '_admin_menu',
-		'uikit'        => 'compiler',
 		'_admin_menu'  => 'options',
 	];
 
