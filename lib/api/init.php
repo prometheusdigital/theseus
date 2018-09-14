@@ -36,6 +36,7 @@ define( 'THESEUS_API_ADMIN_PATH', THESEUS_API_PATH . 'admin/' );
 require_once THESEUS_API_PATH . 'utilities/polyfills.php';
 require_once THESEUS_API_PATH . 'utilities/functions.php';
 require_once THESEUS_API_PATH . 'utilities/deprecated.php';
+require_once THESEUS_API_PATH . 'adjust-head-callbacks.php';
 require_once THESEUS_API_PATH . 'widget/deprecated.php';
 require_once THESEUS_API_PATH . 'components.php';
 
