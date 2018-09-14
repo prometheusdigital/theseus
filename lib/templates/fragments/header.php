@@ -108,37 +108,27 @@ function beans_site_branding() {
 		]
 	);
 
+	// phpcs:disable Generic.WhiteSpace.ScopeIndent.IncorrectExact -- Code structure mimics HTML markup.
+	if( has_custom_logo() ) {
+		the_custom_logo();
+	} else {
 		beans_open_markup_e(
 			'beans_site_title_link',
 			'a',
-			[
+			array(
 				'href'     => home_url(), // Automatically escaped.
 				'rel'      => 'home',
 				'itemprop' => 'headline',
-			]
+			)
 		);
 
-			$logo = get_theme_mod( 'beans_logo_image', false );
+			beans_output_e( 'beans_site_title_text', get_bloginfo( 'name' ) );
 
-			// phpcs:disable Generic.WhiteSpace.ScopeIndent.IncorrectExact -- Code structure mimics HTML markup.
-			if ( $logo ) {
-				beans_selfclose_markup_e(
-					'beans_logo_image',
-					'img',
-					[
-						'class' => 'tm-logo',
-						'src'   => $logo, // Automatically escaped.
-						'alt'   => get_bloginfo( 'name' ), // Automatically escaped.
-					]
-				);
-			} else {
-				beans_output_e( 'beans_site_title_text', get_bloginfo( 'name' ) );
-			}
-
-		// phpcs:enable Generic.WhiteSpace.ScopeIndent.IncorrectExact -- Code structure mimics HTML markup.
 		beans_close_markup_e( 'beans_site_title_link', 'a' );
+	}
+	// phpcs:enable Generic.WhiteSpace.ScopeIndent.IncorrectExact -- Code structure mimics HTML markup.
 
-	beans_close_markup_e( 'beans_site_branding', 'div' );
+		beans_close_markup_e( 'beans_site_branding', 'div' );
 }
 
 beans_add_smart_action( 'beans_site_branding_append_markup', 'beans_site_title_tag' );
