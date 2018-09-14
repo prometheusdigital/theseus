@@ -1,8 +1,9 @@
 # Theseus WordPress theme framework
 
-[![Build Status](https://travis-ci.org/Getbeans/Theseus.svg?branch=development)](https://travis-ci.org/Getbeans/Theseus)
-
 [Theseus](https://prometheus-digital.com/theseus/) is an incredibly powerful and flexible WordPress theme, yet light weight and unbelievably fast. Whether you are a pro or a beginner, you will enjoy the simplicity of it. The magic is under the hood!
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Theseus_deeds_BM_E_84.JPG#/media/File:Theseus_deeds_BM_E_84.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Theseus_deeds_BM_E_84.JPG" alt="Theseus deeds BM E 84.JPG" height="480" width="621"></a><br>By Kodros Painter - <a href="//commons.wikimedia.org/wiki/User:Twospoonfuls" title="User:Twospoonfuls">Twospoonfuls</a> (2008), <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3649564">Link</a></p>
+
 # Documentation
 Whether you are looking how to get started or how to use Theseus API, you will find your answers in the [documentation](https://prometheus-digital.com/theseus/documentation/). If your don't find what your are looking for, don't hesitate to [contact us](https://prometheus-digital.com/theseus/contact/).
 # Code snippets
