@@ -33,11 +33,8 @@ if ( ! defined( 'THESEUS_API_PATH' ) ) {
 define( 'THESEUS_API_ADMIN_PATH', THESEUS_API_PATH . 'admin/' );
 
 // Load dependencies here, as these are used further down.
-require_once THESEUS_API_PATH . 'utilities/polyfills.php';
 require_once THESEUS_API_PATH . 'utilities/functions.php';
-require_once THESEUS_API_PATH . 'utilities/deprecated.php';
 require_once THESEUS_API_PATH . 'adjust-head-callbacks.php';
-require_once THESEUS_API_PATH . 'widget/deprecated.php';
 require_once THESEUS_API_PATH . 'components.php';
 
 // Url.
